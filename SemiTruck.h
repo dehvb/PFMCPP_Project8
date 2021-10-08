@@ -1,13 +1,13 @@
 #pragma once
 #include "Vehicle.h"
 
-struct SemiTruck : public Vehicle
+struct SemiTruck : Vehicle
 {
     SemiTruck(const std::string& s);
+    ~SemiTruck() override;
+    SemiTruck(const SemiTruck&);
     
     void honk();
 
     void pullOver();
-
-    void tryToEvade() override;
 };

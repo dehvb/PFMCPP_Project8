@@ -1,11 +1,8 @@
 #include "SemiTruck.h"
 
 SemiTruck::SemiTruck(const std::string& s) : Vehicle (s) {}
-
-void SemiTruck::tryToEvade()
-{
-    std::cout << "nah man not today" << std::endl;
-}
+SemiTruck::~SemiTruck() = default;
+SemiTruck::SemiTruck(const SemiTruck&) = default;
 
 void SemiTruck::honk()
 {
